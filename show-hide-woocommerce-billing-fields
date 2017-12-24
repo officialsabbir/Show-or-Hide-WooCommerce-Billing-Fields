@@ -1,0 +1,16 @@
+
+//show/hide billing fields  
+$(".woocommerce-billing-fields").hide();
+
+//#bill-to-different-address-checkbox here you need to added your input checkbox ID
+
+$("#bill-to-different-address-checkbox").click(function() {
+    if($(this).is(":checked")) {
+        $(".woocommerce-billing-fields").show();
+    } else {
+        $(".woocommerce-billing-fields").hide();
+    }
+});
+
+
+
